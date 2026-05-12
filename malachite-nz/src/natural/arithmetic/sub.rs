@@ -109,10 +109,9 @@ pub_crate_test! {limbs_sub_limb_in_place<T: PrimitiveUnsigned>(xs: &mut [T], mut
 
 #[inline]
 pub(crate) fn sub_with_carry(x: Limb, y: Limb, carry: Limb) -> (Limb, Limb) {
-    let result_no_carry = x.wrapping_sub(y);
-    let result = result_no_carry.wrapping_sub(carry);
-    let carry = Limb::from((result_no_carry > x) || (result > result_no_carry));
-    (result, carry)
+    let (d1, b1) = x.overflowing_sub(y);
+    let (d2, b2) = d1.overflowing_sub(carry);
+    (d2, Limb::from(b1 | b2))
 }
 
 // Interpreting a two slices of `Limb`s as the limbs (in ascending order) of two `Natural`s,

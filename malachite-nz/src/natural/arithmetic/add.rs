@@ -137,10 +137,9 @@ pub_crate_test! {limbs_vec_add_limb_in_place(xs: &mut Vec<Limb>, y: Limb) {
 
 #[inline]
 pub(crate) fn add_with_carry_limb<T: PrimitiveUnsigned>(x: T, y: T, carry: T) -> (T, T) {
-    let result_no_carry = x.wrapping_add(y);
-    let result = result_no_carry.wrapping_add(carry);
-    let carry = T::from((result_no_carry < x) || (result < result_no_carry));
-    (result, carry)
+    let (s1, c1) = x.overflowing_add(y);
+    let (s2, c2) = s1.overflowing_add(carry);
+    (s2, T::from(c1 | c2))
 }
 
 // Interpreting two slices of `Limb`s as the limbs (in ascending order) of two `Natural`s, where the
