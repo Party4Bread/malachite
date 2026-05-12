@@ -75,14 +75,15 @@ pub_crate_test! {limbs_slice_add_mul_limb_same_length_in_place_left(
 ) -> Limb {
     let len = xs.len();
     assert_eq!(ys.len(), len);
-    let mut carry = 0;
+    let mut carry: Limb = 0;
     for (x, &y) in xs.iter_mut().zip(ys.iter()) {
-        let (product_hi, mut product_lo) = XMulYToZZ::x_mul_y_to_zz(y, z);
-        product_lo = (*x).wrapping_add(product_lo);
-        let mut add_carry = Limb::from(*x > product_lo);
-        *x = product_lo.wrapping_add(carry);
-        add_carry += Limb::from(product_lo > *x);
-        carry = product_hi.wrapping_add(add_carry);
+        let (product_hi, product_lo) = XMulYToZZ::x_mul_y_to_zz(y, z);
+        let (s1, c1) = (*x).overflowing_add(product_lo);
+        let (s2, c2) = s1.overflowing_add(carry);
+        *x = s2;
+        carry = product_hi
+            .wrapping_add(Limb::from(c1))
+            .wrapping_add(Limb::from(c2));
     }
     carry
 }}

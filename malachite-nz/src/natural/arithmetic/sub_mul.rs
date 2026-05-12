@@ -20,7 +20,7 @@ use alloc::vec::Vec;
 use core::cmp::Ordering::*;
 use core::fmt::Display;
 use malachite_base::num::arithmetic::traits::{
-    CheckedSubMul, SubMul, SubMulAssign, WrappingAddAssign,
+    CheckedSubMul, SubMul, SubMulAssign, WrappingAddAssign, XMulYToZZ,
 };
 use malachite_base::num::conversion::traits::SplitInHalf;
 
@@ -77,21 +77,15 @@ pub_crate_test! {limbs_sub_mul_limb_same_length_in_place_left(
     z: Limb
 ) -> Limb {
     assert_eq!(xs.len(), ys.len());
-    let mut borrow = 0;
-    let z = DoubleLimb::from(z);
+    let mut borrow: Limb = 0;
     for (x, &y) in xs.iter_mut().zip(ys.iter()) {
-        let (upper, mut lower) = (DoubleLimb::from(y) * z).split_in_half();
-        lower.wrapping_add_assign(borrow);
-        if lower < borrow {
-            borrow = upper.wrapping_add(1);
-        } else {
-            borrow = upper;
-        }
-        lower = x.wrapping_sub(lower);
-        if lower > *x {
-            borrow.wrapping_add_assign(1);
-        }
-        *x = lower;
+        let (product_hi, product_lo) = Limb::x_mul_y_to_zz(y, z);
+        let (sum, c0) = product_lo.overflowing_add(borrow);
+        let (diff, c1) = (*x).overflowing_sub(sum);
+        *x = diff;
+        borrow = product_hi
+            .wrapping_add(Limb::from(c0))
+            .wrapping_add(Limb::from(c1));
     }
     borrow
 }}
@@ -148,21 +142,15 @@ pub_crate_test! {limbs_sub_mul_limb_same_length_in_place_right(
     z: Limb,
 ) -> Limb {
     assert_eq!(xs.len(), ys.len());
-    let mut borrow = 0;
-    let z = DoubleLimb::from(z);
+    let mut borrow: Limb = 0;
     for (&x, y) in xs.iter().zip(ys.iter_mut()) {
-        let (upper, mut lower) = (DoubleLimb::from(*y) * z).split_in_half();
-        lower.wrapping_add_assign(borrow);
-        if lower < borrow {
-            borrow = upper.wrapping_add(1);
-        } else {
-            borrow = upper;
-        }
-        lower = x.wrapping_sub(lower);
-        if lower > x {
-            borrow.wrapping_add_assign(1);
-        }
-        *y = lower;
+        let (product_hi, product_lo) = Limb::x_mul_y_to_zz(*y, z);
+        let (sum, c0) = product_lo.overflowing_add(borrow);
+        let (diff, c1) = x.overflowing_sub(sum);
+        *y = diff;
+        borrow = product_hi
+            .wrapping_add(Limb::from(c0))
+            .wrapping_add(Limb::from(c1));
     }
     borrow
 }}
