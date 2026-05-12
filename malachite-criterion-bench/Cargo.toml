@@ -7,8 +7,8 @@ rust-version.workspace = true
 edition.workspace = true
 
 [dependencies]
-malachite-base = { version = "0.9.1", path = "../malachite-base" }
-malachite-nz = { version = "0.9.1", default-features = false, path = "../malachite-nz" }
+malachite-base = { version = "0.9.1", path = "../malachite-base", features = ["random"] }
+malachite-nz = { version = "0.9.1", default-features = false, path = "../malachite-nz", features = ["random", "test_build"] }
 num = "0.4.3"
 rug = { version = "1.28.1", default-features = false, features = ["integer", "serde"] }
 
@@ -16,5 +16,29 @@ rug = { version = "1.28.1", default-features = false, features = ["integer", "se
 criterion = "0.3"
 
 [[bench]]
+name = "natural_add"
+harness = false
+
+[[bench]]
+name = "natural_sub"
+harness = false
+
+[[bench]]
 name = "natural_mul"
+harness = false
+
+[[bench]]
+name = "natural_sqr"
+harness = false
+
+[[bench]]
+name = "natural_div"
+harness = false
+
+[[bench]]
+name = "natural_shift"
+harness = false
+
+[[bench]]
+name = "mpn_primitives"
 harness = false

@@ -7,6 +7,7 @@
 // 3 of the License, or (at your option) any later version. See <https://www.gnu.org/licenses/>.
 
 use criterion::*;
+use malachite_base::num::arithmetic::traits::Square;
 use malachite_base::num::random::random_primitive_ints;
 use malachite_base::random::EXAMPLE_SEED;
 use malachite_nz::natural::Natural;
@@ -22,35 +23,28 @@ fn natural_to_rug_integer(n: &Natural) -> rug::Integer {
     rug::Integer::from_str(n.to_string().as_ref()).unwrap()
 }
 
-// Numerator is roughly 2x the denominator width — this exercises the
-// schoolbook / Barrett / div-and-conquer paths in the divisor's size range.
-const BIT_SIZES: &[u64] = &[64, 256, 1024, 4096, 16384, 65536, 262144];
+const BIT_SIZES: &[u64] = &[64, 256, 1024, 4096, 16384, 65536, 262144, 1048576];
 
-fn bench_div(c: &mut Criterion) {
-    let mut group = c.benchmark_group("Natural / Natural");
+fn bench_sqr(c: &mut Criterion) {
+    let mut group = c.benchmark_group("Natural.square()");
     group.plot_config(PlotConfiguration::default().summary_scale(AxisScale::Logarithmic));
     for &bits in BIT_SIZES {
         let x = get_random_natural_with_bits(
             &mut random_primitive_ints(EXAMPLE_SEED.fork("a")),
-            bits << 1,
-        );
-        let y = get_random_natural_with_bits(
-            &mut random_primitive_ints(EXAMPLE_SEED.fork("b")),
             bits,
         );
         let xn = natural_to_biguint(&x);
-        let yn = natural_to_biguint(&y);
         let xr = natural_to_rug_integer(&x);
-        let yr = natural_to_rug_integer(&y);
         group.throughput(Throughput::Elements(bits));
         group.bench_function(BenchmarkId::new("malachite", bits), |b| {
-            b.iter_with_setup(|| (x.clone(), y.clone()), |(x, y)| x / y)
+            b.iter_with_setup(|| x.clone(), |x| x.square())
         });
-        group.bench_function(BenchmarkId::new("num", bits), |b| {
-            b.iter_with_setup(|| (xn.clone(), yn.clone()), |(x, y)| x / y)
+        // num::BigUint has no dedicated square; benchmark x*x for comparison.
+        group.bench_function(BenchmarkId::new("num (x*x)", bits), |b| {
+            b.iter_with_setup(|| (xn.clone(), xn.clone()), |(a, b)| a * b)
         });
-        group.bench_function(BenchmarkId::new("rug", bits), |b| {
-            b.iter_with_setup(|| (xr.clone(), yr.clone()), |(x, y)| x / y)
+        group.bench_function(BenchmarkId::new("rug (x.square())", bits), |b| {
+            b.iter_with_setup(|| xr.clone(), |x| x.square())
         });
     }
     group.finish();
@@ -59,6 +53,6 @@ fn bench_div(c: &mut Criterion) {
 criterion_group! {
     name = benches;
     config = Criterion::default().significance_level(0.1).sample_size(15);
-    targets = bench_div
+    targets = bench_sqr
 }
 criterion_main!(benches);

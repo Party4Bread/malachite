@@ -22,17 +22,15 @@ fn natural_to_rug_integer(n: &Natural) -> rug::Integer {
     rug::Integer::from_str(n.to_string().as_ref()).unwrap()
 }
 
-// Numerator is roughly 2x the denominator width — this exercises the
-// schoolbook / Barrett / div-and-conquer paths in the divisor's size range.
-const BIT_SIZES: &[u64] = &[64, 256, 1024, 4096, 16384, 65536, 262144];
+const BIT_SIZES: &[u64] = &[64, 256, 1024, 4096, 16384, 65536, 262144, 1048576];
 
-fn bench_div(c: &mut Criterion) {
-    let mut group = c.benchmark_group("Natural / Natural");
+fn bench_add(c: &mut Criterion) {
+    let mut group = c.benchmark_group("Natural + Natural");
     group.plot_config(PlotConfiguration::default().summary_scale(AxisScale::Logarithmic));
     for &bits in BIT_SIZES {
         let x = get_random_natural_with_bits(
             &mut random_primitive_ints(EXAMPLE_SEED.fork("a")),
-            bits << 1,
+            bits,
         );
         let y = get_random_natural_with_bits(
             &mut random_primitive_ints(EXAMPLE_SEED.fork("b")),
@@ -44,13 +42,13 @@ fn bench_div(c: &mut Criterion) {
         let yr = natural_to_rug_integer(&y);
         group.throughput(Throughput::Elements(bits));
         group.bench_function(BenchmarkId::new("malachite", bits), |b| {
-            b.iter_with_setup(|| (x.clone(), y.clone()), |(x, y)| x / y)
+            b.iter_with_setup(|| (x.clone(), y.clone()), |(x, y)| x + y)
         });
         group.bench_function(BenchmarkId::new("num", bits), |b| {
-            b.iter_with_setup(|| (xn.clone(), yn.clone()), |(x, y)| x / y)
+            b.iter_with_setup(|| (xn.clone(), yn.clone()), |(x, y)| x + y)
         });
         group.bench_function(BenchmarkId::new("rug", bits), |b| {
-            b.iter_with_setup(|| (xr.clone(), yr.clone()), |(x, y)| x / y)
+            b.iter_with_setup(|| (xr.clone(), yr.clone()), |(x, y)| x + y)
         });
     }
     group.finish();
@@ -58,7 +56,7 @@ fn bench_div(c: &mut Criterion) {
 
 criterion_group! {
     name = benches;
-    config = Criterion::default().significance_level(0.1).sample_size(15);
-    targets = bench_div
+    config = Criterion::default().significance_level(0.1).sample_size(20);
+    targets = bench_add
 }
 criterion_main!(benches);
