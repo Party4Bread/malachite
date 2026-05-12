@@ -1,0 +1,1916 @@
+
+=== Run: stock  (RUSTFLAGS='') ===
+    Finished `bench` profile [optimized] target(s) in 0.14s
+     Running benches/mpn_primitives.rs (target/release/deps/mpn_primitives-092499b19c7c18be)
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4: Collecting 15 samples in estimated 2.0000 s (28M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4
+                        time:   [28.487 ns 28.564 ns 28.675 ns]
+                        thrpt:  [139.49 Melem/s 140.03 Melem/s 140.42 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16: Collecting 15 samples in estimated 2.0000 s (21M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16
+                        time:   [45.119 ns 45.497 ns 45.768 ns]
+                        thrpt:  [349.59 Melem/s 351.67 Melem/s 354.62 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32: Collecting 15 samples in estimated 2.0000 s (20M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32
+                        time:   [56.627 ns 56.792 ns 57.053 ns]
+                        thrpt:  [560.88 Melem/s 563.46 Melem/s 565.10 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64
+                        time:   [89.940 ns 91.336 ns 94.038 ns]
+                        thrpt:  [680.58 Melem/s 700.71 Melem/s 711.58 Melem/s]
+                 change:
+                        time:   [-1.0959% +1.1703% +4.8292%] (p = 0.62 > 0.10)
+                        thrpt:  [-4.6067% -1.1567% +1.1080%]
+                        No change in performance detected.
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128: Collecting 15 samples in estimated 2.0000 s (9.1M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128
+                        time:   [164.26 ns 164.70 ns 165.47 ns]
+                        thrpt:  [773.54 Melem/s 777.18 Melem/s 779.27 Melem/s]
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256: Collecting 15 samples in estimated 2.0000 s (4.7M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256
+                        time:   [301.47 ns 302.23 ns 303.25 ns]
+                        thrpt:  [844.18 Melem/s 847.03 Melem/s 849.16 Melem/s]
+                 change:
+                        time:   [+0.1520% +0.5112% +0.8614%] (p = 0.01 < 0.10)
+                        thrpt:  [-0.8541% -0.5086% -0.1518%]
+                        Change within noise threshold.
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512: Collecting 15 samples in estimated 2.0001 s (2.4M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512
+                        time:   [703.23 ns 709.29 ns 715.08 ns]
+                        thrpt:  [716.00 Melem/s 721.85 Melem/s 728.07 Melem/s]
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024: Collecting 15 samples in estimated 2.0001 s (1.3M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024
+                        time:   [1.3646 µs 1.3708 µs 1.3803 µs]
+                        thrpt:  [741.86 Melem/s 746.99 Melem/s 750.38 Melem/s]
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048: Collecting 15 samples in estimated 2.0001 s (621k iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048
+                        time:   [2.7088 µs 2.7147 µs 2.7205 µs]
+                        thrpt:  [752.81 Melem/s 754.40 Melem/s 756.05 Melem/s]
+                 change:
+                        time:   [+0.2063% +0.5560% +0.8742%] (p = 0.00 < 0.10)
+                        thrpt:  [-0.8666% -0.5529% -0.2059%]
+                        Change within noise threshold.
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192: Collecting 15 samples in estimated 2.0000 s (153k iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192
+                        time:   [10.995 µs 11.080 µs 11.195 µs]
+                        thrpt:  [731.73 Melem/s 739.35 Melem/s 745.05 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768: Collecting 15 samples in estimated 2.0009 s (45k iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768
+                        time:   [36.177 µs 36.600 µs 37.024 µs]
+                        thrpt:  [885.04 Melem/s 895.30 Melem/s 905.76 Melem/s]
+
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4: Collecting 15 samples in estimated 2.0000 s (28M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4
+                        time:   [28.779 ns 28.858 ns 28.956 ns]
+                        thrpt:  [138.14 Melem/s 138.61 Melem/s 138.99 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16: Collecting 15 samples in estimated 2.0000 s (20M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16
+                        time:   [45.661 ns 45.887 ns 46.090 ns]
+                        thrpt:  [347.14 Melem/s 348.68 Melem/s 350.41 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32: Collecting 15 samples in estimated 2.0000 s (17M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32
+                        time:   [69.220 ns 69.524 ns 70.081 ns]
+                        thrpt:  [456.61 Melem/s 460.27 Melem/s 462.30 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64: Collecting 15 samples in estimated 2.0000 s (12M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64
+                        time:   [117.34 ns 117.57 ns 117.82 ns]
+                        thrpt:  [543.22 Melem/s 544.35 Melem/s 545.40 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128: Collecting 15 samples in estimated 2.0000 s (7.1M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128
+                        time:   [223.14 ns 225.19 ns 227.47 ns]
+                        thrpt:  [562.71 Melem/s 568.40 Melem/s 573.63 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256: Collecting 15 samples in estimated 2.0000 s (3.7M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256
+                        time:   [416.85 ns 417.21 ns 417.66 ns]
+                        thrpt:  [612.94 Melem/s 613.59 Melem/s 614.12 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512: Collecting 15 samples in estimated 2.0000 s (2.1M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512
+                        time:   [806.74 ns 808.22 ns 809.91 ns]
+                        thrpt:  [632.17 Melem/s 633.49 Melem/s 634.65 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024: Collecting 15 samples in estimated 2.0002 s (1.1M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024
+                        time:   [1.6124 µs 1.6445 µs 1.6815 µs]
+                        thrpt:  [608.98 Melem/s 622.70 Melem/s 635.08 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048: Collecting 15 samples in estimated 2.0001 s (540k iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048
+                        time:   [3.1688 µs 3.1838 µs 3.2018 µs]
+                        thrpt:  [639.64 Melem/s 643.26 Melem/s 646.30 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192: Collecting 15 samples in estimated 2.0009 s (140k iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192
+                        time:   [12.711 µs 12.798 µs 12.884 µs]
+                        thrpt:  [635.84 Melem/s 640.10 Melem/s 644.50 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768: Collecting 15 samples in estimated 2.0026 s (35k iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768
+                        time:   [50.310 µs 50.450 µs 50.628 µs]
+                        thrpt:  [647.23 Melem/s 649.52 Melem/s 651.32 Melem/s]
+
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4: Collecting 15 samples in estimated 2.0000 s (26M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/4
+                        time:   [28.132 ns 28.277 ns 28.451 ns]
+                        thrpt:  [140.59 Melem/s 141.46 Melem/s 142.19 Melem/s]
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/16
+                        time:   [36.905 ns 37.213 ns 37.591 ns]
+                        thrpt:  [425.63 Melem/s 429.96 Melem/s 433.55 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32: Collecting 15 samples in estimated 2.0000 s (21M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/32
+                        time:   [48.441 ns 48.765 ns 49.171 ns]
+                        thrpt:  [650.79 Melem/s 656.21 Melem/s 660.60 Melem/s]
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64: Collecting 15 samples in estimated 2.0000 s (16M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/64
+                        time:   [71.690 ns 72.324 ns 72.942 ns]
+                        thrpt:  [877.42 Melem/s 884.91 Melem/s 892.73 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128: Collecting 15 samples in estimated 2.0000 s (11M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/128
+                        time:   [118.48 ns 118.71 ns 118.95 ns]
+                        thrpt:  [1.0761 Gelem/s 1.0783 Gelem/s 1.0803 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256: Collecting 15 samples in estimated 2.0000 s (5.6M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/256
+                        time:   [223.86 ns 227.34 ns 231.94 ns]
+                        thrpt:  [1.1037 Gelem/s 1.1261 Gelem/s 1.1436 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512: Collecting 15 samples in estimated 2.0000 s (3.6M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/512
+                        time:   [420.82 ns 426.05 ns 434.61 ns]
+                        thrpt:  [1.1781 Gelem/s 1.2017 Gelem/s 1.2167 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024: Collecting 15 samples in estimated 2.0000 s (2.0M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/1024
+                        time:   [812.76 ns 813.85 ns 815.03 ns]
+                        thrpt:  [1.2564 Gelem/s 1.2582 Gelem/s 1.2599 Gelem/s]
+Found 4 outliers among 15 measurements (26.67%)
+  2 (13.33%) low mild
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048: Collecting 15 samples in estimated 2.0000 s (847k iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/2048
+                        time:   [1.9245 µs 1.9687 µs 2.0346 µs]
+                        thrpt:  [1.0066 Gelem/s 1.0403 Gelem/s 1.0641 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192: Collecting 15 samples in estimated 2.0004 s (212k iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/8192
+                        time:   [7.5954 µs 7.6468 µs 7.6986 µs]
+                        thrpt:  [1.0641 Gelem/s 1.0713 Gelem/s 1.0785 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768: Collecting 15 samples in estimated 2.0034 s (60k iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/32768
+                        time:   [25.609 µs 25.818 µs 26.072 µs]
+                        thrpt:  [1.2568 Gelem/s 1.2692 Gelem/s 1.2795 Gelem/s]
+
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4: Collecting 15 samples in estimated 2.0000 s (29M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4
+                        time:   [27.058 ns 27.093 ns 27.122 ns]
+                        thrpt:  [147.48 Melem/s 147.64 Melem/s 147.83 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16: Collecting 15 samples in estimated 2.0000 s (24M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16
+                        time:   [35.651 ns 35.721 ns 35.825 ns]
+                        thrpt:  [446.61 Melem/s 447.91 Melem/s 448.80 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32: Collecting 15 samples in estimated 2.0000 s (22M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32
+                        time:   [46.064 ns 46.656 ns 47.440 ns]
+                        thrpt:  [674.54 Melem/s 685.87 Melem/s 694.69 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) high mild
+  2 (13.33%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64: Collecting 15 samples in estimated 2.0000 s (17M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64
+                        time:   [69.247 ns 69.378 ns 69.557 ns]
+                        thrpt:  [920.10 Melem/s 922.48 Melem/s 924.23 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  2 (13.33%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128: Collecting 15 samples in estimated 2.0000 s (11M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128
+                        time:   [118.59 ns 118.85 ns 119.15 ns]
+                        thrpt:  [1.0743 Gelem/s 1.0770 Gelem/s 1.0793 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256: Collecting 15 samples in estimated 2.0000 s (5.8M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256
+                        time:   [220.67 ns 220.97 ns 221.40 ns]
+                        thrpt:  [1.1563 Gelem/s 1.1585 Gelem/s 1.1601 Gelem/s]
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512: Collecting 15 samples in estimated 2.0000 s (3.5M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512
+                        time:   [415.99 ns 416.99 ns 417.98 ns]
+                        thrpt:  [1.2249 Gelem/s 1.2279 Gelem/s 1.2308 Gelem/s]
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024: Collecting 15 samples in estimated 2.0000 s (1.9M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024
+                        time:   [804.05 ns 805.47 ns 807.02 ns]
+                        thrpt:  [1.2689 Gelem/s 1.2713 Gelem/s 1.2736 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048: Collecting 15 samples in estimated 2.0001 s (1.0M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048
+                        time:   [1.5923 µs 1.5996 µs 1.6114 µs]
+                        thrpt:  [1.2710 Gelem/s 1.2804 Gelem/s 1.2862 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192: Collecting 15 samples in estimated 2.0002 s (243k iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192
+                        time:   [6.2990 µs 6.3570 µs 6.4875 µs]
+                        thrpt:  [1.2627 Gelem/s 1.2886 Gelem/s 1.3005 Gelem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) high mild
+  2 (13.33%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768: Collecting 15 samples in estimated 2.0023 s (60k iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768
+                        time:   [25.318 µs 25.459 µs 25.686 µs]
+                        thrpt:  [1.2757 Gelem/s 1.2871 Gelem/s 1.2942 Gelem/s]
+
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4: Collecting 15 samples in estimated 2.0000 s (25M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/4
+                        time:   [33.811 ns 34.227 ns 34.796 ns]
+                        thrpt:  [114.96 Melem/s 116.87 Melem/s 118.31 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/16
+                        time:   [38.259 ns 38.647 ns 39.105 ns]
+                        thrpt:  [409.15 Melem/s 414.00 Melem/s 418.20 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32: Collecting 15 samples in estimated 2.0000 s (19M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/32
+                        time:   [52.775 ns 52.812 ns 52.851 ns]
+                        thrpt:  [605.47 Melem/s 605.93 Melem/s 606.35 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) low mild
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/64
+                        time:   [82.280 ns 82.524 ns 83.023 ns]
+                        thrpt:  [770.87 Melem/s 775.53 Melem/s 777.83 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128: Collecting 15 samples in estimated 2.0000 s (10M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/128
+                        time:   [140.61 ns 141.04 ns 141.72 ns]
+                        thrpt:  [903.20 Melem/s 907.53 Melem/s 910.30 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256: Collecting 15 samples in estimated 2.0000 s (5.1M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/256
+                        time:   [260.25 ns 261.79 ns 263.48 ns]
+                        thrpt:  [971.62 Melem/s 977.89 Melem/s 983.66 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512: Collecting 15 samples in estimated 2.0001 s (3.1M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/512
+                        time:   [492.92 ns 494.29 ns 495.40 ns]
+                        thrpt:  [1.0335 Gelem/s 1.0358 Gelem/s 1.0387 Gelem/s]
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024: Collecting 15 samples in estimated 2.0000 s (1.7M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/1024
+                        time:   [959.48 ns 965.77 ns 975.97 ns]
+                        thrpt:  [1.0492 Gelem/s 1.0603 Gelem/s 1.0672 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048: Collecting 15 samples in estimated 2.0002 s (831k iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/2048
+                        time:   [1.8959 µs 1.8982 µs 1.9015 µs]
+                        thrpt:  [1.0770 Gelem/s 1.0789 Gelem/s 1.0802 Gelem/s]
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192: Collecting 15 samples in estimated 2.0007 s (207k iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/8192
+                        time:   [7.6157 µs 7.6259 µs 7.6391 µs]
+                        thrpt:  [1.0724 Gelem/s 1.0742 Gelem/s 1.0757 Gelem/s]
+Found 4 outliers among 15 measurements (26.67%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+  2 (13.33%) high severe
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768: Collecting 15 samples in estimated 2.0013 s (50k iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/32768
+                        time:   [30.882 µs 31.243 µs 31.652 µs]
+                        thrpt:  [1.0352 Gelem/s 1.0488 Gelem/s 1.0611 Gelem/s]
+
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4: Collecting 15 samples in estimated 2.0000 s (28M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4
+                        time:   [28.554 ns 28.683 ns 28.828 ns]
+                        thrpt:  [138.75 Melem/s 139.45 Melem/s 140.08 Melem/s]
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16
+                        time:   [39.386 ns 39.616 ns 39.835 ns]
+                        thrpt:  [401.65 Melem/s 403.88 Melem/s 406.24 Melem/s]
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32: Collecting 15 samples in estimated 2.0000 s (19M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32
+                        time:   [56.223 ns 56.528 ns 56.874 ns]
+                        thrpt:  [562.65 Melem/s 566.09 Melem/s 569.16 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64
+                        time:   [88.665 ns 88.823 ns 88.987 ns]
+                        thrpt:  [719.21 Melem/s 720.54 Melem/s 721.81 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128: Collecting 15 samples in estimated 2.0000 s (9.4M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128
+                        time:   [155.05 ns 156.71 ns 158.39 ns]
+                        thrpt:  [808.15 Melem/s 816.81 Melem/s 825.52 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256: Collecting 15 samples in estimated 2.0000 s (5.0M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256
+                        time:   [287.95 ns 289.20 ns 290.55 ns]
+                        thrpt:  [881.09 Melem/s 885.21 Melem/s 889.04 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512: Collecting 15 samples in estimated 2.0000 s (2.8M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512
+                        time:   [554.58 ns 556.90 ns 559.40 ns]
+                        thrpt:  [915.26 Melem/s 919.38 Melem/s 923.21 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  3 (20.00%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024: Collecting 15 samples in estimated 2.0001 s (1.5M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024
+                        time:   [1.0908 µs 1.0982 µs 1.1065 µs]
+                        thrpt:  [925.45 Melem/s 932.46 Melem/s 938.74 Melem/s]
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048: Collecting 15 samples in estimated 2.0001 s (763k iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048
+                        time:   [2.1458 µs 2.1511 µs 2.1561 µs]
+                        thrpt:  [949.87 Melem/s 952.09 Melem/s 954.43 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192: Collecting 15 samples in estimated 2.0007 s (191k iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192
+                        time:   [8.4917 µs 8.5141 µs 8.5565 µs]
+                        thrpt:  [957.41 Melem/s 962.17 Melem/s 964.71 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768: Collecting 15 samples in estimated 2.0050 s (48k iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768
+                        time:   [34.277 µs 34.357 µs 34.488 µs]
+                        thrpt:  [950.13 Melem/s 953.76 Melem/s 955.98 Melem/s]
+
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4: Collecting 15 samples in estimated 2.0000 s (27M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/4
+                        time:   [29.348 ns 29.406 ns 29.458 ns]
+                        thrpt:  [135.79 Melem/s 136.03 Melem/s 136.30 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16: Collecting 15 samples in estimated 2.0000 s (22M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/16
+                        time:   [45.133 ns 45.223 ns 45.331 ns]
+                        thrpt:  [352.96 Melem/s 353.80 Melem/s 354.51 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32: Collecting 15 samples in estimated 2.0000 s (17M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/32
+                        time:   [67.214 ns 67.618 ns 68.260 ns]
+                        thrpt:  [468.80 Melem/s 473.24 Melem/s 476.09 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  3 (20.00%) high mild
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64: Collecting 15 samples in estimated 2.0000 s (12M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/64
+                        time:   [111.32 ns 111.63 ns 111.97 ns]
+                        thrpt:  [571.58 Melem/s 573.33 Melem/s 574.91 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128: Collecting 15 samples in estimated 2.0000 s (7.6M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/128
+                        time:   [199.89 ns 200.85 ns 202.21 ns]
+                        thrpt:  [632.99 Melem/s 637.31 Melem/s 640.35 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256: Collecting 15 samples in estimated 2.0000 s (4.0M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/256
+                        time:   [376.06 ns 377.93 ns 380.44 ns]
+                        thrpt:  [672.90 Melem/s 677.38 Melem/s 680.74 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512: Collecting 15 samples in estimated 2.0001 s (2.2M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/512
+                        time:   [722.36 ns 723.39 ns 724.32 ns]
+                        thrpt:  [706.87 Melem/s 707.77 Melem/s 708.79 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024: Collecting 15 samples in estimated 2.0000 s (1.2M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/1024
+                        time:   [1.4285 µs 1.4316 µs 1.4339 µs]
+                        thrpt:  [714.16 Melem/s 715.29 Melem/s 716.83 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048: Collecting 15 samples in estimated 2.0001 s (600k iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/2048
+                        time:   [2.8375 µs 2.8588 µs 2.8759 µs]
+                        thrpt:  [712.13 Melem/s 716.38 Melem/s 721.77 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192: Collecting 15 samples in estimated 2.0009 s (154k iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/8192
+                        time:   [11.263 µs 11.296 µs 11.328 µs]
+                        thrpt:  [723.14 Melem/s 725.24 Melem/s 727.36 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768: Collecting 15 samples in estimated 2.0064 s (36k iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/32768
+                        time:   [46.016 µs 46.266 µs 46.684 µs]
+                        thrpt:  [701.90 Melem/s 708.25 Melem/s 712.09 Melem/s]
+
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4: Collecting 15 samples in estimated 2.0000 s (28M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/4
+                        time:   [29.572 ns 29.709 ns 29.843 ns]
+                        thrpt:  [134.04 Melem/s 134.64 Melem/s 135.26 Melem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/16
+                        time:   [41.342 ns 41.638 ns 42.098 ns]
+                        thrpt:  [380.07 Melem/s 384.26 Melem/s 387.02 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32: Collecting 15 samples in estimated 2.0000 s (19M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/32
+                        time:   [57.345 ns 57.591 ns 57.832 ns]
+                        thrpt:  [553.33 Melem/s 555.65 Melem/s 558.02 Melem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/64
+                        time:   [88.936 ns 89.131 ns 89.389 ns]
+                        thrpt:  [715.97 Melem/s 718.04 Melem/s 719.62 Melem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128: Collecting 15 samples in estimated 2.0000 s (9.5M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/128
+                        time:   [152.69 ns 153.08 ns 153.52 ns]
+                        thrpt:  [833.79 Melem/s 836.19 Melem/s 838.30 Melem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256: Collecting 15 samples in estimated 2.0000 s (4.8M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/256
+                        time:   [290.88 ns 295.80 ns 305.34 ns]
+                        thrpt:  [838.40 Melem/s 865.44 Melem/s 880.08 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512: Collecting 15 samples in estimated 2.0000 s (2.9M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/512
+                        time:   [545.53 ns 548.77 ns 551.01 ns]
+                        thrpt:  [929.20 Melem/s 933.00 Melem/s 938.54 Melem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024: Collecting 15 samples in estimated 2.0001 s (1.6M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/1024
+                        time:   [1.0584 µs 1.0612 µs 1.0641 µs]
+                        thrpt:  [962.35 Melem/s 964.99 Melem/s 967.46 Melem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048: Collecting 15 samples in estimated 2.0001 s (769k iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/2048
+                        time:   [2.0939 µs 2.1076 µs 2.1253 µs]
+                        thrpt:  [963.64 Melem/s 971.72 Melem/s 978.08 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192: Collecting 15 samples in estimated 2.0010 s (195k iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/8192
+                        time:   [8.3380 µs 8.3664 µs 8.3970 µs]
+                        thrpt:  [975.59 Melem/s 979.16 Melem/s 982.49 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768: Collecting 15 samples in estimated 2.0043 s (47k iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/32768
+                        time:   [32.837 µs 32.996 µs 33.292 µs]
+                        thrpt:  [984.27 Melem/s 993.09 Melem/s 997.91 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4: Collecting 15 samples in estimated 2.0000 s (27M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/4
+                        time:   [30.313 ns 30.509 ns 30.713 ns]
+                        thrpt:  [130.24 Melem/s 131.11 Melem/s 131.95 Melem/s]
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/16
+                        time:   [42.413 ns 42.516 ns 42.622 ns]
+                        thrpt:  [375.39 Melem/s 376.33 Melem/s 377.24 Melem/s]
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32: Collecting 15 samples in estimated 2.0000 s (19M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/32
+                        time:   [58.923 ns 59.057 ns 59.164 ns]
+                        thrpt:  [540.87 Melem/s 541.84 Melem/s 543.08 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/64
+                        time:   [93.027 ns 96.034 ns 99.836 ns]
+                        thrpt:  [641.05 Melem/s 666.43 Melem/s 687.97 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128: Collecting 15 samples in estimated 2.0000 s (9.3M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/128
+                        time:   [157.97 ns 158.65 ns 159.30 ns]
+                        thrpt:  [803.52 Melem/s 806.82 Melem/s 810.27 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256: Collecting 15 samples in estimated 2.0000 s (4.6M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/256
+                        time:   [297.22 ns 299.86 ns 302.46 ns]
+                        thrpt:  [846.39 Melem/s 853.73 Melem/s 861.31 Melem/s]
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512: Collecting 15 samples in estimated 2.0000 s (2.9M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/512
+                        time:   [565.07 ns 573.99 ns 585.64 ns]
+                        thrpt:  [874.26 Melem/s 892.00 Melem/s 906.09 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024: Collecting 15 samples in estimated 2.0001 s (1.6M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/1024
+                        time:   [1.0825 µs 1.0842 µs 1.0865 µs]
+                        thrpt:  [942.45 Melem/s 944.48 Melem/s 945.99 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) low mild
+  2 (13.33%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048: Collecting 15 samples in estimated 2.0001 s (769k iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/2048
+                        time:   [2.1520 µs 2.1544 µs 2.1589 µs]
+                        thrpt:  [948.64 Melem/s 950.59 Melem/s 951.68 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192: Collecting 15 samples in estimated 2.0008 s (193k iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/8192
+                        time:   [8.5568 µs 8.5810 µs 8.5998 µs]
+                        thrpt:  [952.58 Melem/s 954.67 Melem/s 957.37 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) low mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768: Collecting 15 samples in estimated 2.0026 s (48k iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/32768
+                        time:   [33.856 µs 33.896 µs 33.941 µs]
+                        thrpt:  [965.43 Melem/s 966.73 Melem/s 967.87 Melem/s]
+
+
+=== Run: native  (RUSTFLAGS='-C target-cpu=native') ===
+   Compiling target-lexicon v0.13.4
+   Compiling proc-macro2 v1.0.106
+   Compiling quote v1.0.44
+   Compiling unicode-ident v1.0.22
+   Compiling autocfg v1.5.0
+   Compiling pyo3-build-config v0.27.2
+   Compiling libc v0.2.180
+   Compiling syn v2.0.114
+   Compiling serde_core v1.0.228
+   Compiling num-traits v0.2.19
+   Compiling serde v1.0.228
+   Compiling serde_derive v1.0.228
+   Compiling version_check v0.9.5
+   Compiling typenum v1.19.0
+   Compiling generic-array v0.14.7
+   Compiling crossbeam-utils v0.8.21
+   Compiling either v1.15.0
+   Compiling zmij v1.0.18
+   Compiling memchr v2.7.6
+   Compiling cfg-if v1.0.4
+   Compiling rustix v1.1.3
+   Compiling getrandom v0.3.4
+   Compiling zerocopy v0.8.37
+   Compiling num-integer v0.1.46
+   Compiling pyo3-macros-backend v0.27.2
+   Compiling pyo3-ffi v0.27.2
+   Compiling itoa v1.0.17
+   Compiling bitflags v2.10.0
+   Compiling libm v0.2.16
+   Compiling linux-raw-sys v0.11.0
+   Compiling serde_json v1.0.149
+   Compiling unicode-width v0.1.14
+   Compiling gmp-mpfr-sys v1.6.8
+   Compiling once_cell v1.21.3
+   Compiling textwrap v0.11.0
+   Compiling crossbeam-epoch v0.9.18
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling atty v0.2.14
+   Compiling memoffset v0.9.1
+   Compiling strsim v0.8.0
+   Compiling rand_core v0.9.5
+   Compiling ryu v1.0.22
+   Compiling rayon-core v1.13.0
+   Compiling vec_map v0.8.2
+   Compiling heck v0.5.0
+   Compiling ansi_term v0.12.1
+   Compiling fastrand v2.3.0
+   Compiling powerfmt v0.2.0
+   Compiling bitflags v1.3.2
+   Compiling clap v2.34.0
+   Compiling deranged v0.5.5
+   Compiling tempfile v3.24.0
+   Compiling digest v0.10.7
+   Compiling ppv-lite86 v0.2.21
+   Compiling crossbeam-deque v0.8.6
+   Compiling num-bigint v0.4.6
+   Compiling pyo3 v0.27.2
+   Compiling plotters-backend v0.3.7
+   Compiling rug v1.28.1
+   Compiling regex-syntax v0.8.8
+   Compiling foldhash v0.2.0
+   Compiling byteorder v1.5.0
+   Compiling bytemuck v1.25.0
+   Compiling keccak v0.1.5
+   Compiling num-conv v0.2.0
+   Compiling time-core v0.1.8
+   Compiling time v0.3.47
+   Compiling sha3 v0.10.8
+   Compiling safe_arch v1.0.0
+   Compiling gnuplot v0.0.46
+   Compiling hashbrown v0.16.1
+   Compiling regex-automata v0.4.13
+   Compiling plotters-svg v0.3.7
+   Compiling num-rational v0.4.2
+   Compiling rand_chacha v0.9.0
+   Compiling pyo3-macros v0.27.2
+   Compiling rand v0.9.2
+   Compiling num-iter v0.1.45
+   Compiling getrandom v0.2.17
+   Compiling csv-core v0.1.13
+   Compiling itertools v0.10.5
+   Compiling itertools v0.14.0
+   Compiling num-complex v0.4.6
+   Compiling malachite-nz v0.9.1 (/home/user/malachite/malachite-nz)
+   Compiling same-file v1.0.6
+   Compiling az v1.3.0
+   Compiling unindent v0.2.4
+   Compiling cast v0.3.0
+   Compiling half v1.8.3
+   Compiling indoc v2.0.7
+   Compiling serde_cbor v0.11.2
+   Compiling criterion-plot v0.4.5
+   Compiling walkdir v2.5.0
+   Compiling num v0.4.3
+   Compiling malachite-base v0.9.1 (/home/user/malachite/malachite-base)
+   Compiling csv v1.4.0
+   Compiling rayon v1.11.0
+   Compiling plotters v0.3.7
+   Compiling regex v1.12.2
+   Compiling wide v1.1.1
+   Compiling tinytemplate v1.2.1
+   Compiling oorandom v11.1.5
+   Compiling lazy_static v1.5.0
+   Compiling criterion v0.3.6
+   Compiling malachite-criterion-bench v0.8.1 (/home/user/malachite/malachite-criterion-bench)
+    Finished `bench` profile [optimized] target(s) in 3m 41s
+     Running benches/mpn_primitives.rs (target/release/deps/mpn_primitives-dda902b1c3744ac1)
+WARNING: HTML report generation will become a non-default optional feature in Criterion.rs 0.4.0.
+This feature is being moved to cargo-criterion (https://github.com/bheisler/cargo-criterion) and will be optional in a future version of Criterion.rs. To silence this warning, either switch to cargo-criterion or enable the 'html_reports' feature in your Cargo.toml.
+
+Gnuplot not found, using plotters backend
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4: Collecting 15 samples in estimated 2.0000 s (27M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/4
+                        time:   [29.463 ns 29.769 ns 30.048 ns]
+                        thrpt:  [133.12 Melem/s 134.37 Melem/s 135.76 Melem/s]
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16: Collecting 15 samples in estimated 2.0000 s (21M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/16
+                        time:   [39.293 ns 39.401 ns 39.504 ns]
+                        thrpt:  [405.02 Melem/s 406.08 Melem/s 407.19 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32: Collecting 15 samples in estimated 2.0000 s (20M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32
+                        time:   [54.207 ns 54.714 ns 55.267 ns]
+                        thrpt:  [579.01 Melem/s 584.86 Melem/s 590.33 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64: Collecting 15 samples in estimated 2.0000 s (15M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/64
+                        time:   [83.008 ns 83.323 ns 83.787 ns]
+                        thrpt:  [763.84 Melem/s 768.09 Melem/s 771.01 Melem/s]
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128: Collecting 15 samples in estimated 2.0000 s (10M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/128
+                        time:   [140.42 ns 140.86 ns 141.39 ns]
+                        thrpt:  [905.32 Melem/s 908.71 Melem/s 911.53 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256: Collecting 15 samples in estimated 2.0000 s (5.1M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/256
+                        time:   [263.86 ns 264.37 ns 264.94 ns]
+                        thrpt:  [966.27 Melem/s 968.35 Melem/s 970.20 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512: Collecting 15 samples in estimated 2.0000 s (2.5M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/512
+                        time:   [653.51 ns 656.77 ns 660.74 ns]
+                        thrpt:  [774.89 Melem/s 779.57 Melem/s 783.46 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024: Collecting 15 samples in estimated 2.0001 s (1.7M iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/1024
+                        time:   [987.43 ns 994.96 ns 1.0055 µs]
+                        thrpt:  [1.0184 Gelem/s 1.0292 Gelem/s 1.0370 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048: Collecting 15 samples in estimated 2.0003 s (637k iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/2048
+                        time:   [2.5503 µs 2.5918 µs 2.6635 µs]
+                        thrpt:  [768.90 Melem/s 790.19 Melem/s 803.04 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192: Collecting 15 samples in estimated 2.0001 s (163k iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/8192
+                        time:   [10.490 µs 10.681 µs 11.055 µs]
+                        thrpt:  [741.04 Melem/s 766.99 Melem/s 780.90 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768: Warming up for 1.0000 s
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768: Collecting 15 samples in estimated 2.0003 s (40k iterations)
+Benchmarking mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768: Analyzing
+mpn::addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_left)/32768
+                        time:   [41.223 µs 41.343 µs 41.465 µs]
+                        thrpt:  [790.26 Melem/s 792.59 Melem/s 794.90 Melem/s]
+
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4: Collecting 15 samples in estimated 2.0000 s (27M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4
+                        time:   [29.796 ns 29.916 ns 30.021 ns]
+                        thrpt:  [133.24 Melem/s 133.71 Melem/s 134.25 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16
+                        time:   [40.907 ns 41.063 ns 41.293 ns]
+                        thrpt:  [387.48 Melem/s 389.65 Melem/s 391.13 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32: Collecting 15 samples in estimated 2.0000 s (19M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32
+                        time:   [58.378 ns 58.507 ns 58.725 ns]
+                        thrpt:  [544.92 Melem/s 546.95 Melem/s 548.15 Melem/s]
+Found 4 outliers among 15 measurements (26.67%)
+  1 (6.67%) low mild
+  3 (20.00%) high severe
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64
+                        time:   [94.324 ns 94.842 ns 95.623 ns]
+                        thrpt:  [669.30 Melem/s 674.81 Melem/s 678.51 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128: Collecting 15 samples in estimated 2.0000 s (9.2M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128
+                        time:   [163.65 ns 163.96 ns 164.29 ns]
+                        thrpt:  [779.13 Melem/s 780.67 Melem/s 782.17 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256: Collecting 15 samples in estimated 2.0000 s (4.6M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256
+                        time:   [306.79 ns 308.26 ns 311.17 ns]
+                        thrpt:  [822.70 Melem/s 830.47 Melem/s 834.45 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512: Collecting 15 samples in estimated 2.0001 s (2.3M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512
+                        time:   [710.49 ns 714.75 ns 721.41 ns]
+                        thrpt:  [709.72 Melem/s 716.33 Melem/s 720.63 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024: Collecting 15 samples in estimated 2.0000 s (1.5M iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024
+                        time:   [1.1476 µs 1.1486 µs 1.1496 µs]
+                        thrpt:  [890.72 Melem/s 891.53 Melem/s 892.28 Melem/s]
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048: Collecting 15 samples in estimated 2.0001 s (766k iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048
+                        time:   [2.2786 µs 2.2901 µs 2.3034 µs]
+                        thrpt:  [889.11 Melem/s 894.29 Melem/s 898.79 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192: Collecting 15 samples in estimated 2.0003 s (155k iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192
+                        time:   [11.211 µs 11.361 µs 11.534 µs]
+                        thrpt:  [710.28 Melem/s 721.09 Melem/s 730.72 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768: Warming up for 1.0000 s
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768: Collecting 15 samples in estimated 2.0050 s (38k iterations)
+Benchmarking mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768: Analyzing
+mpn::submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768
+                        time:   [45.079 µs 45.455 µs 45.851 µs]
+                        thrpt:  [714.66 Melem/s 720.89 Melem/s 726.91 Melem/s]
+
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4: Collecting 15 samples in estimated 2.0000 s (26M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/4: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/4
+                        time:   [28.285 ns 28.338 ns 28.404 ns]
+                        thrpt:  [140.83 Melem/s 141.15 Melem/s 141.42 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) low mild
+  2 (13.33%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16: Collecting 15 samples in estimated 2.0000 s (25M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/16: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/16
+                        time:   [34.510 ns 34.605 ns 34.740 ns]
+                        thrpt:  [460.57 Melem/s 462.37 Melem/s 463.63 Melem/s]
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32: Collecting 15 samples in estimated 2.0000 s (22M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/32
+                        time:   [43.445 ns 43.617 ns 43.767 ns]
+                        thrpt:  [731.15 Melem/s 733.66 Melem/s 736.57 Melem/s]
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64: Collecting 15 samples in estimated 2.0000 s (18M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/64: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/64
+                        time:   [60.225 ns 60.464 ns 60.770 ns]
+                        thrpt:  [1.0532 Gelem/s 1.0585 Gelem/s 1.0627 Gelem/s]
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128: Collecting 15 samples in estimated 2.0000 s (13M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/128: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/128
+                        time:   [94.250 ns 94.875 ns 96.020 ns]
+                        thrpt:  [1.3330 Gelem/s 1.3491 Gelem/s 1.3581 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256: Collecting 15 samples in estimated 2.0000 s (6.8M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/256: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/256
+                        time:   [163.81 ns 168.87 ns 179.59 ns]
+                        thrpt:  [1.4254 Gelem/s 1.5160 Gelem/s 1.5628 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512: Collecting 15 samples in estimated 2.0000 s (3.6M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/512: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/512
+                        time:   [416.26 ns 423.31 ns 438.35 ns]
+                        thrpt:  [1.1680 Gelem/s 1.2095 Gelem/s 1.2300 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024: Collecting 15 samples in estimated 2.0000 s (2.5M iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/1024: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/1024
+                        time:   [586.87 ns 588.25 ns 589.86 ns]
+                        thrpt:  [1.7360 Gelem/s 1.7408 Gelem/s 1.7449 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048: Collecting 15 samples in estimated 2.0001 s (986k iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/2048: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/2048
+                        time:   [1.5841 µs 1.5885 µs 1.5924 µs]
+                        thrpt:  [1.2861 Gelem/s 1.2893 Gelem/s 1.2928 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192: Collecting 15 samples in estimated 2.0007 s (248k iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/8192: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/8192
+                        time:   [6.2759 µs 6.2904 µs 6.3141 µs]
+                        thrpt:  [1.2974 Gelem/s 1.3023 Gelem/s 1.3053 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768: Collecting 15 samples in estimated 2.0034 s (61k iterations)
+Benchmarking mpn::mul_1 (limbs_mul_limb_to_out)/32768: Analyzing
+mpn::mul_1 (limbs_mul_limb_to_out)/32768
+                        time:   [25.496 µs 25.592 µs 25.726 µs]
+                        thrpt:  [1.2737 Gelem/s 1.2804 Gelem/s 1.2852 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4: Collecting 15 samples in estimated 2.0000 s (29M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/4
+                        time:   [26.954 ns 27.022 ns 27.100 ns]
+                        thrpt:  [147.60 Melem/s 148.03 Melem/s 148.40 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16: Collecting 15 samples in estimated 2.0000 s (25M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/16
+                        time:   [32.240 ns 32.320 ns 32.416 ns]
+                        thrpt:  [493.59 Melem/s 495.05 Melem/s 496.27 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32
+                        time:   [40.216 ns 40.259 ns 40.304 ns]
+                        thrpt:  [793.97 Melem/s 794.86 Melem/s 795.70 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64: Collecting 15 samples in estimated 2.0000 s (19M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/64
+                        time:   [55.541 ns 55.865 ns 56.311 ns]
+                        thrpt:  [1.1365 Gelem/s 1.1456 Gelem/s 1.1523 Gelem/s]
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/128
+                        time:   [85.138 ns 85.931 ns 87.667 ns]
+                        thrpt:  [1.4601 Gelem/s 1.4896 Gelem/s 1.5034 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256: Collecting 15 samples in estimated 2.0000 s (7.4M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/256
+                        time:   [144.76 ns 145.22 ns 145.77 ns]
+                        thrpt:  [1.7562 Gelem/s 1.7629 Gelem/s 1.7684 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512: Collecting 15 samples in estimated 2.0000 s (4.9M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/512
+                        time:   [271.16 ns 274.86 ns 279.06 ns]
+                        thrpt:  [1.8348 Gelem/s 1.8628 Gelem/s 1.8882 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024: Collecting 15 samples in estimated 2.0001 s (2.8M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/1024
+                        time:   [505.05 ns 506.19 ns 507.74 ns]
+                        thrpt:  [2.0168 Gelem/s 2.0229 Gelem/s 2.0275 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048: Collecting 15 samples in estimated 2.0001 s (1.5M iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/2048
+                        time:   [996.72 ns 1.0026 µs 1.0079 µs]
+                        thrpt:  [2.0320 Gelem/s 2.0426 Gelem/s 2.0547 Gelem/s]
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192: Collecting 15 samples in estimated 2.0006 s (324k iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/8192
+                        time:   [4.2987 µs 4.3416 µs 4.3783 µs]
+                        thrpt:  [1.8710 Gelem/s 1.8868 Gelem/s 1.9057 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768: Warming up for 1.0000 s
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768: Collecting 15 samples in estimated 2.0024 s (82k iterations)
+Benchmarking mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768: Analyzing
+mpn::mul_1 in-place (limbs_slice_mul_limb_in_place)/32768
+                        time:   [17.197 µs 17.665 µs 18.375 µs]
+                        thrpt:  [1.7832 Gelem/s 1.8550 Gelem/s 1.9054 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4: Collecting 15 samples in estimated 2.0000 s (25M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/4: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/4
+                        time:   [32.964 ns 33.062 ns 33.172 ns]
+                        thrpt:  [120.58 Melem/s 120.98 Melem/s 121.35 Melem/s]
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16: Collecting 15 samples in estimated 2.0000 s (19M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/16: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/16
+                        time:   [58.793 ns 59.116 ns 59.586 ns]
+                        thrpt:  [268.52 Melem/s 270.66 Melem/s 272.14 Melem/s]
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32: Collecting 15 samples in estimated 2.0000 s (16M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/32
+                        time:   [78.176 ns 78.468 ns 78.745 ns]
+                        thrpt:  [406.38 Melem/s 407.81 Melem/s 409.34 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64: Collecting 15 samples in estimated 2.0000 s (11M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/64: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/64
+                        time:   [130.01 ns 130.39 ns 130.81 ns]
+                        thrpt:  [489.27 Melem/s 490.82 Melem/s 492.27 Melem/s]
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128: Collecting 15 samples in estimated 2.0000 s (6.7M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/128: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/128
+                        time:   [236.95 ns 237.55 ns 238.03 ns]
+                        thrpt:  [537.74 Melem/s 538.82 Melem/s 540.20 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256: Collecting 15 samples in estimated 2.0000 s (3.5M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/256: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/256
+                        time:   [448.37 ns 455.89 ns 461.47 ns]
+                        thrpt:  [554.75 Melem/s 561.53 Melem/s 570.96 Melem/s]
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512: Collecting 15 samples in estimated 2.0001 s (2.0M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/512: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/512
+                        time:   [855.85 ns 856.90 ns 857.97 ns]
+                        thrpt:  [596.76 Melem/s 597.50 Melem/s 598.23 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024: Collecting 15 samples in estimated 2.0002 s (1.1M iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/1024: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/1024
+                        time:   [1.6920 µs 1.6982 µs 1.7048 µs]
+                        thrpt:  [600.67 Melem/s 602.98 Melem/s 605.22 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048: Collecting 15 samples in estimated 2.0001 s (418k iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/2048: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/2048
+                        time:   [4.3104 µs 4.3573 µs 4.4216 µs]
+                        thrpt:  [463.18 Melem/s 470.01 Melem/s 475.12 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192: Collecting 15 samples in estimated 2.0008 s (105k iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/8192: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/8192
+                        time:   [17.230 µs 17.256 µs 17.282 µs]
+                        thrpt:  [474.01 Melem/s 474.75 Melem/s 475.45 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high mild
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768: Warming up for 1.0000 s
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768: Collecting 15 samples in estimated 2.0046 s (32k iterations)
+Benchmarking mpn::add_n (limbs_add_same_length_to_out)/32768: Analyzing
+mpn::add_n (limbs_add_same_length_to_out)/32768
+                        time:   [54.394 µs 54.462 µs 54.542 µs]
+                        thrpt:  [600.79 Melem/s 601.67 Melem/s 602.42 Melem/s]
+
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4: Collecting 15 samples in estimated 2.0000 s (26M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/4
+                        time:   [31.949 ns 32.220 ns 32.603 ns]
+                        thrpt:  [122.69 Melem/s 124.15 Melem/s 125.20 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16: Collecting 15 samples in estimated 2.0000 s (20M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/16
+                        time:   [52.151 ns 52.257 ns 52.359 ns]
+                        thrpt:  [305.58 Melem/s 306.18 Melem/s 306.80 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32: Collecting 15 samples in estimated 2.0000 s (15M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32
+                        time:   [79.464 ns 79.975 ns 80.399 ns]
+                        thrpt:  [398.02 Melem/s 400.13 Melem/s 402.70 Melem/s]
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64: Collecting 15 samples in estimated 2.0000 s (11M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/64
+                        time:   [135.38 ns 136.37 ns 137.14 ns]
+                        thrpt:  [466.68 Melem/s 469.32 Melem/s 472.74 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) low mild
+  2 (13.33%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128: Collecting 15 samples in estimated 2.0000 s (6.6M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/128
+                        time:   [242.36 ns 242.84 ns 243.27 ns]
+                        thrpt:  [526.17 Melem/s 527.09 Melem/s 528.13 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256: Collecting 15 samples in estimated 2.0001 s (3.3M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/256
+                        time:   [463.65 ns 466.12 ns 469.63 ns]
+                        thrpt:  [545.11 Melem/s 549.21 Melem/s 552.14 Melem/s]
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512: Collecting 15 samples in estimated 2.0001 s (1.9M iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/512
+                        time:   [894.51 ns 897.34 ns 900.82 ns]
+                        thrpt:  [568.37 Melem/s 570.57 Melem/s 572.38 Melem/s]
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024: Collecting 15 samples in estimated 2.0001 s (996k iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/1024
+                        time:   [1.7975 µs 1.8019 µs 1.8067 µs]
+                        thrpt:  [566.76 Melem/s 568.29 Melem/s 569.69 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048: Collecting 15 samples in estimated 2.0003 s (501k iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/2048
+                        time:   [3.5731 µs 3.6015 µs 3.6683 µs]
+                        thrpt:  [558.29 Melem/s 568.65 Melem/s 573.17 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192: Collecting 15 samples in estimated 2.0008 s (126k iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/8192
+                        time:   [14.096 µs 14.136 µs 14.181 µs]
+                        thrpt:  [577.66 Melem/s 579.51 Melem/s 581.17 Melem/s]
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768: Warming up for 1.0000 s
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768: Collecting 15 samples in estimated 2.0042 s (31k iterations)
+Benchmarking mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768: Analyzing
+mpn::add_n in-place (limbs_slice_add_same_length_in_place_left)/32768
+                        time:   [56.840 µs 57.133 µs 57.454 µs]
+                        thrpt:  [570.34 Melem/s 573.54 Melem/s 576.49 Melem/s]
+
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4: Collecting 15 samples in estimated 2.0000 s (26M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/4: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/4
+                        time:   [30.477 ns 30.932 ns 31.641 ns]
+                        thrpt:  [126.42 Melem/s 129.32 Melem/s 131.25 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16: Collecting 15 samples in estimated 2.0000 s (21M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/16: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/16
+                        time:   [48.803 ns 48.895 ns 49.019 ns]
+                        thrpt:  [326.41 Melem/s 327.23 Melem/s 327.85 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32: Collecting 15 samples in estimated 2.0000 s (16M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/32
+                        time:   [73.580 ns 73.990 ns 74.379 ns]
+                        thrpt:  [430.23 Melem/s 432.49 Melem/s 434.90 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64: Collecting 15 samples in estimated 2.0000 s (11M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/64: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/64
+                        time:   [121.97 ns 122.11 ns 122.36 ns]
+                        thrpt:  [523.04 Melem/s 524.11 Melem/s 524.72 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128: Collecting 15 samples in estimated 2.0000 s (7.2M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/128: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/128
+                        time:   [219.62 ns 220.54 ns 221.86 ns]
+                        thrpt:  [576.94 Melem/s 580.40 Melem/s 582.81 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256: Collecting 15 samples in estimated 2.0000 s (3.7M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/256: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/256
+                        time:   [422.04 ns 423.78 ns 425.31 ns]
+                        thrpt:  [601.91 Melem/s 604.08 Melem/s 606.58 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512: Collecting 15 samples in estimated 2.0001 s (2.1M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/512: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/512
+                        time:   [801.40 ns 803.31 ns 804.88 ns]
+                        thrpt:  [636.12 Melem/s 637.36 Melem/s 638.88 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024: Collecting 15 samples in estimated 2.0001 s (1.1M iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/1024: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/1024
+                        time:   [1.5779 µs 1.5810 µs 1.5846 µs]
+                        thrpt:  [646.21 Melem/s 647.71 Melem/s 648.96 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048: Collecting 15 samples in estimated 2.0004 s (543k iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/2048: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/2048
+                        time:   [3.1385 µs 3.1478 µs 3.1671 µs]
+                        thrpt:  [646.65 Melem/s 650.60 Melem/s 652.53 Melem/s]
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192: Collecting 15 samples in estimated 2.0011 s (138k iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/8192: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/8192
+                        time:   [12.471 µs 12.515 µs 12.598 µs]
+                        thrpt:  [650.25 Melem/s 654.56 Melem/s 656.88 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768: Warming up for 1.0000 s
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768: Collecting 15 samples in estimated 2.0063 s (33k iterations)
+Benchmarking mpn::sub_n (limbs_sub_same_length_to_out)/32768: Analyzing
+mpn::sub_n (limbs_sub_same_length_to_out)/32768
+                        time:   [50.954 µs 51.354 µs 51.913 µs]
+                        thrpt:  [631.21 Melem/s 638.08 Melem/s 643.09 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4: Collecting 15 samples in estimated 2.0000 s (28M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/4: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/4
+                        time:   [28.195 ns 28.471 ns 28.708 ns]
+                        thrpt:  [139.34 Melem/s 140.49 Melem/s 141.87 Melem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/16: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/16
+                        time:   [34.784 ns 35.386 ns 36.426 ns]
+                        thrpt:  [439.25 Melem/s 452.16 Melem/s 459.98 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32: Collecting 15 samples in estimated 2.0000 s (24M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/32
+                        time:   [38.171 ns 38.962 ns 40.399 ns]
+                        thrpt:  [792.09 Melem/s 821.32 Melem/s 838.34 Melem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64: Collecting 15 samples in estimated 2.0000 s (20M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/64: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/64
+                        time:   [49.537 ns 49.749 ns 49.966 ns]
+                        thrpt:  [1.2809 Gelem/s 1.2865 Gelem/s 1.2920 Gelem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128: Collecting 15 samples in estimated 2.0000 s (15M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/128: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/128
+                        time:   [74.919 ns 75.972 ns 76.682 ns]
+                        thrpt:  [1.6692 Gelem/s 1.6848 Gelem/s 1.7085 Gelem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256: Collecting 15 samples in estimated 2.0000 s (8.2M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/256: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/256
+                        time:   [123.39 ns 123.84 ns 124.45 ns]
+                        thrpt:  [2.0571 Gelem/s 2.0671 Gelem/s 2.0747 Gelem/s]
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512: Collecting 15 samples in estimated 2.0000 s (5.2M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/512: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/512
+                        time:   [222.36 ns 223.94 ns 226.04 ns]
+                        thrpt:  [2.2651 Gelem/s 2.2863 Gelem/s 2.3026 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024: Collecting 15 samples in estimated 2.0000 s (3.3M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/1024: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/1024
+                        time:   [417.75 ns 418.81 ns 419.96 ns]
+                        thrpt:  [2.4383 Gelem/s 2.4450 Gelem/s 2.4512 Gelem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  1 (6.67%) low mild
+  1 (6.67%) high mild
+  1 (6.67%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048: Collecting 15 samples in estimated 2.0001 s (1.5M iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/2048: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/2048
+                        time:   [909.32 ns 912.14 ns 915.17 ns]
+                        thrpt:  [2.2378 Gelem/s 2.2453 Gelem/s 2.2522 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192: Collecting 15 samples in estimated 2.0003 s (371k iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/8192: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/8192
+                        time:   [3.5712 µs 3.5834 µs 3.6035 µs]
+                        thrpt:  [2.2733 Gelem/s 2.2861 Gelem/s 2.2939 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768: Warming up for 1.0000 s
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768: Collecting 15 samples in estimated 2.0015 s (91k iterations)
+Benchmarking mpn::lshift (limbs_shl_to_out, bit-shift)/32768: Analyzing
+mpn::lshift (limbs_shl_to_out, bit-shift)/32768
+                        time:   [15.219 µs 15.417 µs 15.599 µs]
+                        thrpt:  [2.1006 Gelem/s 2.1255 Gelem/s 2.1531 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4: Collecting 15 samples in estimated 2.0000 s (28M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/4: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/4
+                        time:   [29.582 ns 29.974 ns 30.700 ns]
+                        thrpt:  [130.29 Melem/s 133.45 Melem/s 135.22 Melem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high severe
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16: Collecting 15 samples in estimated 2.0000 s (25M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/16: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/16
+                        time:   [34.949 ns 35.046 ns 35.129 ns]
+                        thrpt:  [455.46 Melem/s 456.54 Melem/s 457.81 Melem/s]
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32: Collecting 15 samples in estimated 2.0000 s (23M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/32
+                        time:   [42.485 ns 43.104 ns 43.957 ns]
+                        thrpt:  [727.98 Melem/s 742.39 Melem/s 753.21 Melem/s]
+Found 3 outliers among 15 measurements (20.00%)
+  3 (20.00%) high severe
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64: Collecting 15 samples in estimated 2.0000 s (18M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/64: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/64
+                        time:   [57.932 ns 58.440 ns 59.434 ns]
+                        thrpt:  [1.0768 Gelem/s 1.0951 Gelem/s 1.1047 Gelem/s]
+Found 2 outliers among 15 measurements (13.33%)
+  2 (13.33%) high severe
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128: Collecting 15 samples in estimated 2.0000 s (14M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/128: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/128
+                        time:   [89.070 ns 89.731 ns 90.351 ns]
+                        thrpt:  [1.4167 Gelem/s 1.4265 Gelem/s 1.4371 Gelem/s]
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256: Collecting 15 samples in estimated 2.0000 s (6.8M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/256: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/256
+                        time:   [167.54 ns 168.20 ns 169.07 ns]
+                        thrpt:  [1.5142 Gelem/s 1.5220 Gelem/s 1.5280 Gelem/s]
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512: Collecting 15 samples in estimated 2.0000 s (4.8M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/512: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/512
+                        time:   [267.22 ns 268.09 ns 268.93 ns]
+                        thrpt:  [1.9038 Gelem/s 1.9098 Gelem/s 1.9160 Gelem/s]
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024: Collecting 15 samples in estimated 2.0000 s (2.8M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/1024: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/1024
+                        time:   [505.75 ns 509.03 ns 511.81 ns]
+                        thrpt:  [2.0008 Gelem/s 2.0116 Gelem/s 2.0247 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048: Collecting 15 samples in estimated 2.0001 s (1.2M iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/2048: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/2048
+                        time:   [1.2031 µs 1.2064 µs 1.2106 µs]
+                        thrpt:  [1.6918 Gelem/s 1.6976 Gelem/s 1.7022 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192: Collecting 15 samples in estimated 2.0008 s (298k iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/8192: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/8192
+                        time:   [4.6836 µs 4.7148 µs 4.7484 µs]
+                        thrpt:  [1.7252 Gelem/s 1.7375 Gelem/s 1.7491 Gelem/s]
+Found 1 outliers among 15 measurements (6.67%)
+  1 (6.67%) high mild
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768: Warming up for 1.0000 s
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768: Collecting 15 samples in estimated 2.0008 s (76k iterations)
+Benchmarking mpn::rshift (limbs_shr_to_out, bit-shift)/32768: Analyzing
+mpn::rshift (limbs_shr_to_out, bit-shift)/32768
+                        time:   [19.059 µs 19.240 µs 19.370 µs]
+                        thrpt:  [1.6917 Gelem/s 1.7031 Gelem/s 1.7193 Gelem/s]
+
+
+=== Comparison: stock vs native ===
+BENCH                                                                               BASE_ns      CAND_ns   SPEEDUP
+mpn__add_n (limbs_add_same_length_to_out)/1024                                        960.7       1690.3     0.57x
+mpn__add_n (limbs_add_same_length_to_out)/128                                         141.1        237.1     0.60x
+mpn__add_n (limbs_add_same_length_to_out)/16                                           38.4         59.5     0.64x
+mpn__add_n (limbs_add_same_length_to_out)/2048                                       1897.0       4305.5     0.44x
+mpn__add_n (limbs_add_same_length_to_out)/256                                         259.8        445.2     0.58x
+mpn__add_n (limbs_add_same_length_to_out)/32                                           52.8         78.3     0.67x
+mpn__add_n (limbs_add_same_length_to_out)/32768                                     30980.3      54416.3     0.57x
+mpn__add_n (limbs_add_same_length_to_out)/4                                            34.0         33.0     1.03x
+mpn__add_n (limbs_add_same_length_to_out)/512                                         494.4        855.9     0.58x
+mpn__add_n (limbs_add_same_length_to_out)/64                                           82.3        130.4     0.63x
+mpn__add_n (limbs_add_same_length_to_out)/8192                                       7629.6      17236.8     0.44x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/1024                 1091.4       1800.9     0.61x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/128                   155.2        242.7     0.64x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/16                     39.4         52.4     0.75x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/2048                 2144.3       3580.7     0.60x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/256                   288.6        466.7     0.62x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/32                     56.4         79.9     0.71x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/32768               34349.9      57246.0     0.60x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/4                      28.7         32.0     0.90x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/512                   554.3        897.9     0.62x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/64                     88.8        135.3     0.66x
+mpn__add_n in-place (limbs_slice_add_same_length_in_place_left)/8192                 8513.7      14125.5     0.60x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/1024                1369.4        993.9     1.38x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/128                  164.7        140.8     1.17x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/16                    45.0         39.3     1.14x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/2048                2710.4       2560.1     1.06x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/256                  302.1        265.0     1.14x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/32                    57.0         54.2     1.05x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/32768              36572.4      41270.8     0.89x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/4                     28.5         29.5     0.97x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/512                  706.6        655.4     1.08x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/64                    90.3         83.0     1.09x
+mpn__addmul_1 (limbs_slice_add_mul_limb_same_length_in_place_lef/8192               11061.3      10486.4     1.05x
+mpn__lshift (limbs_shl_to_out, bit-shift)/1024                                       1058.6        417.2     2.54x
+mpn__lshift (limbs_shl_to_out, bit-shift)/128                                         153.3         74.7     2.05x
+mpn__lshift (limbs_shl_to_out, bit-shift)/16                                           41.3         34.8     1.19x
+mpn__lshift (limbs_shl_to_out, bit-shift)/2048                                       2091.8        914.4     2.29x
+mpn__lshift (limbs_shl_to_out, bit-shift)/256                                         291.9        124.5     2.34x
+mpn__lshift (limbs_shl_to_out, bit-shift)/32                                           57.4         38.2     1.51x
+mpn__lshift (limbs_shl_to_out, bit-shift)/32768                                     33162.2      15206.6     2.18x
+mpn__lshift (limbs_shl_to_out, bit-shift)/4                                            29.6         28.2     1.05x
+mpn__lshift (limbs_shl_to_out, bit-shift)/512                                         545.1        222.4     2.45x
+mpn__lshift (limbs_shl_to_out, bit-shift)/64                                           89.1         49.7     1.79x
+mpn__lshift (limbs_shl_to_out, bit-shift)/8192                                       8388.0       3602.2     2.33x
+mpn__mul_1 (limbs_mul_limb_to_out)/1024                                               814.4        588.1     1.38x
+mpn__mul_1 (limbs_mul_limb_to_out)/128                                                118.7         95.4     1.24x
+mpn__mul_1 (limbs_mul_limb_to_out)/16                                                  37.1         34.6     1.07x
+mpn__mul_1 (limbs_mul_limb_to_out)/2048                                              1923.9       1582.1     1.22x
+mpn__mul_1 (limbs_mul_limb_to_out)/256                                                225.0        163.8     1.37x
+mpn__mul_1 (limbs_mul_limb_to_out)/32                                                  48.5         43.5     1.11x
+mpn__mul_1 (limbs_mul_limb_to_out)/32768                                            25952.0      25559.6     1.02x
+mpn__mul_1 (limbs_mul_limb_to_out)/4                                                   28.2         28.3     0.99x
+mpn__mul_1 (limbs_mul_limb_to_out)/512                                                420.9        416.2     1.01x
+mpn__mul_1 (limbs_mul_limb_to_out)/64                                                  72.1         60.5     1.19x
+mpn__mul_1 (limbs_mul_limb_to_out)/8192                                              7586.1       6295.9     1.20x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/1024                              804.6        505.6     1.59x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/128                               118.6         85.7     1.38x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/16                                 35.8         32.3     1.11x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/2048                             1596.5       1002.7     1.59x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/256                               220.9        145.5     1.52x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/32                                 46.0         40.3     1.14x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/32768                           25664.8      17310.5     1.48x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/4                                  27.1         27.0     1.00x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/512                               416.7        271.8     1.53x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/64                                 69.5         56.1     1.24x
+mpn__mul_1 in-place (limbs_slice_mul_limb_in_place)/8192                             6300.3       4301.4     1.46x
+mpn__rshift (limbs_shr_to_out, bit-shift)/1024                                       1082.7        505.8     2.14x
+mpn__rshift (limbs_shr_to_out, bit-shift)/128                                         158.0         90.5     1.75x
+mpn__rshift (limbs_shr_to_out, bit-shift)/16                                           42.5         35.0     1.21x
+mpn__rshift (limbs_shr_to_out, bit-shift)/2048                                       2156.4       1206.2     1.79x
+mpn__rshift (limbs_shr_to_out, bit-shift)/256                                         298.1        167.9     1.78x
+mpn__rshift (limbs_shr_to_out, bit-shift)/32                                           58.9         42.5     1.39x
+mpn__rshift (limbs_shr_to_out, bit-shift)/32768                                     33904.1      18996.7     1.78x
+mpn__rshift (limbs_shr_to_out, bit-shift)/4                                            30.5         29.7     1.03x
+mpn__rshift (limbs_shr_to_out, bit-shift)/512                                         564.6        267.7     2.11x
+mpn__rshift (limbs_shr_to_out, bit-shift)/64                                           93.0         58.1     1.60x
+mpn__rshift (limbs_shr_to_out, bit-shift)/8192                                       8574.9       4691.0     1.83x
+mpn__sub_n (limbs_sub_same_length_to_out)/1024                                       1426.7       1579.8     0.90x
+mpn__sub_n (limbs_sub_same_length_to_out)/128                                         200.2        220.1     0.91x
+mpn__sub_n (limbs_sub_same_length_to_out)/16                                           45.2         48.9     0.92x
+mpn__sub_n (limbs_sub_same_length_to_out)/2048                                       2833.7       3142.4     0.90x
+mpn__sub_n (limbs_sub_same_length_to_out)/256                                         375.3        424.1     0.88x
+mpn__sub_n (limbs_sub_same_length_to_out)/32                                           67.5         74.1     0.91x
+mpn__sub_n (limbs_sub_same_length_to_out)/32768                                     46246.9      51112.0     0.90x
+mpn__sub_n (limbs_sub_same_length_to_out)/4                                            29.4         30.4     0.97x
+mpn__sub_n (limbs_sub_same_length_to_out)/512                                         722.7        801.6     0.90x
+mpn__sub_n (limbs_sub_same_length_to_out)/64                                          111.6        122.3     0.91x
+mpn__sub_n (limbs_sub_same_length_to_out)/8192                                      11254.1      12504.0     0.90x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/1024                    1615.6       1147.5     1.41x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/128                      222.4        163.6     1.36x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/16                        45.6         41.2     1.11x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/2048                    3180.1       2279.6     1.40x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/256                      417.3        307.0     1.36x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32                        69.5         58.4     1.19x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/32768                  50534.0      45476.4     1.11x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/4                         28.9         29.8     0.97x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/512                      806.6        713.6     1.13x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/64                       117.5         95.7     1.23x
+mpn__submul_1 (limbs_sub_mul_limb_same_length_in_place_left)/8192                   12760.3      11126.0     1.15x
